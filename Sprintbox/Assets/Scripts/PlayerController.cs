@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 namespace Sprintbox
@@ -11,6 +13,8 @@ namespace Sprintbox
 
         [Tooltip("Speed of the player in tiles per second")]
         public float speed = 32.0f;
+
+        public static Action OnWin;
         
         private Controls _controls;
 
@@ -19,6 +23,7 @@ namespace Sprintbox
         private Vector3Int _queued;
 
         private bool _moving;
+        private bool _levelComplete;
 
         private void Awake()
         {
@@ -27,6 +32,8 @@ namespace Sprintbox
             _controls.Player.MoveRight.performed += _ => StartMove(Vector3Int.right);
             _controls.Player.MoveUp.performed    += _ => StartMove(Vector3Int.up);
             _controls.Player.MoveDown.performed  += _ => StartMove(Vector3Int.down);
+
+            _controls.Player.LevelRestart.performed += _ => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         private void Start()
@@ -59,6 +66,10 @@ namespace Sprintbox
 
         private void StartMove(Vector3Int dir)
         {
+            // If the level is complete, ignore input
+            if (_levelComplete)
+                return;
+            
             // If the player is already moving, add the input to an input queue instead
             if (_moving)
             {
@@ -120,13 +131,24 @@ namespace Sprintbox
                     boxes.Remove(box);
                     
                     Destroy(box);
+                    
+                    CheckWinCondition();
                 }
-
+                
                 step -= 1.0f;
                 yield return null;
             }
             
             _moving = false;
+        }
+
+        private void CheckWinCondition()
+        {
+            if (_boxes.Count == 0)
+            {
+                _levelComplete = true;
+                OnWin?.Invoke();
+            }
         }
         
         private void OnEnable() => _controls.Enable();
