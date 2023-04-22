@@ -8,7 +8,7 @@ namespace Sprintbox
 
 		private void Start()
 		{
-			PlayerController.OnWin += () => winScreen.SetActive(true);
+			PlayerController.Instance.OnWin += () => winScreen.SetActive(true);
 		}
 	}
 }

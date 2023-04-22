@@ -14,7 +14,9 @@ namespace Sprintbox
         [Tooltip("Speed of the player in tiles per second")]
         public float speed = 32.0f;
 
-        public static Action OnWin;
+        public Action OnWin;
+
+        public static PlayerController Instance { get; private set; }
         
         private Controls _controls;
 
@@ -27,6 +29,8 @@ namespace Sprintbox
 
         private void Awake()
         {
+            Instance = this;
+        
             _controls = new();
             _controls.Player.MoveLeft.performed  += _ => StartMove(Vector3Int.left);
             _controls.Player.MoveRight.performed += _ => StartMove(Vector3Int.right);
