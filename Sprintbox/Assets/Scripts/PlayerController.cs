@@ -7,6 +7,7 @@ using UnityEngine.Tilemaps;
 
 namespace Sprintbox
 {
+    [RequireComponent(typeof(PuzzleObject))]
     public class PlayerController : MonoBehaviour
     {
         public Tilemap tilemap;
@@ -27,15 +28,18 @@ namespace Sprintbox
         private bool _moving;
         private bool _levelComplete;
 
+        private PuzzleObject _puzzleObject;
+        
         private void Awake()
         {
             Instance = this;
-        
+            _puzzleObject = GetComponent<PuzzleObject>();
+            
             _controls = new();
-            _controls.Player.MoveLeft.performed  += _ => StartMove(Vector3Int.left);
-            _controls.Player.MoveRight.performed += _ => StartMove(Vector3Int.right);
-            _controls.Player.MoveUp.performed    += _ => StartMove(Vector3Int.up);
-            _controls.Player.MoveDown.performed  += _ => StartMove(Vector3Int.down);
+            _controls.Player.MoveLeft.performed  += _ => PuzzleManager.Instance.Move(_puzzleObject, Vector3Int.left);
+            _controls.Player.MoveRight.performed += _ => PuzzleManager.Instance.Move(_puzzleObject, Vector3Int.right);
+            _controls.Player.MoveUp.performed    += _ => PuzzleManager.Instance.Move(_puzzleObject, Vector3Int.up);
+            _controls.Player.MoveDown.performed  += _ => PuzzleManager.Instance.Move(_puzzleObject, Vector3Int.down);
 
             _controls.Player.LevelRestart.performed += _ => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
