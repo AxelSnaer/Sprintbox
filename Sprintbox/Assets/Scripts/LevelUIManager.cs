@@ -1,14 +1,20 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 namespace Sprintbox
 {
 	public class LevelUIManager : MonoBehaviour
 	{
-		public GameObject winScreen;
+		public Image winScreen;
 
 		private void Start()
 		{
-			PlayerController.Instance.OnWin += () => winScreen.SetActive(true);
+			PuzzleManager.Instance.OnWin += () =>
+			{
+				winScreen.gameObject.SetActive(true);
+				winScreen.DOColor(Color.white, 0.5f);
+			};
 		}
 	}
 }

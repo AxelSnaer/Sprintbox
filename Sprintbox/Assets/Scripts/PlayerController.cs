@@ -1,78 +1,51 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 namespace Sprintbox
 {
-    [RequireComponent(typeof(PuzzleObject))]
+    [RequireComponent(typeof(PuzzleObject), typeof(SpriteRenderer))]
     public class PlayerController : MonoBehaviour
     {
         public Tilemap tilemap;
 
         [Tooltip("Speed of the player in tiles per second")]
         public float speed = 32.0f;
-
-        public Action OnWin;
+        
+        public Sprite upSprite;
+        public Sprite downSprite;
+        public Sprite leftSprite;
+        public Sprite rightSprite;
 
         public static PlayerController Instance { get; private set; }
         
         private Controls _controls;
 
-        private Dictionary<Vector3Int, GameObject> _boxes = new();
-        private Dictionary<Vector3Int, GameObject> _goals = new();
         private Vector3Int _queued;
 
         private bool _moving;
         private bool _levelComplete;
 
         private PuzzleObject _puzzleObject;
+        private SpriteRenderer _spriteRenderer;
         
         private void Awake()
         {
             Instance = this;
             _puzzleObject = GetComponent<PuzzleObject>();
+            _spriteRenderer = GetComponent<SpriteRenderer>();
             
             _controls = new();
-            _controls.Player.MoveLeft.performed  += _ => PuzzleManager.Instance.Move(_puzzleObject, Vector3Int.left);
-            _controls.Player.MoveRight.performed += _ => PuzzleManager.Instance.Move(_puzzleObject, Vector3Int.right);
-            _controls.Player.MoveUp.performed    += _ => PuzzleManager.Instance.Move(_puzzleObject, Vector3Int.up);
-            _controls.Player.MoveDown.performed  += _ => PuzzleManager.Instance.Move(_puzzleObject, Vector3Int.down);
+            _controls.Player.MoveLeft.performed  += _ => Move(Vector3Int.left);
+            _controls.Player.MoveRight.performed += _ => Move(Vector3Int.right);
+            _controls.Player.MoveUp.performed    += _ => Move(Vector3Int.up);
+            _controls.Player.MoveDown.performed  += _ => Move(Vector3Int.down);
 
             _controls.Player.LevelRestart.performed += _ => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        private void Start()
-        {
-            _boxes = FindTiledObjectsWithTag("Box");
-            _goals = FindTiledObjectsWithTag("Goal");
-        }
-
-        private Dictionary<Vector3Int, GameObject> FindTiledObjectsWithTag(string searchTag)
-        {
-            var offset = tilemap.transform.position;
-            var dict = new Dictionary<Vector3Int, GameObject>();
-            
-            foreach (var box in GameObject.FindGameObjectsWithTag(searchTag))
-            {
-                var coord = tilemap.WorldToCell(box.transform.position - offset);
-                dict[coord] = box;
-            }
-
-            return dict;
-        }
-
-        private void Update()
-        {
-            // Check if the player is stationary and there is an input queued
-            // If there is, then submit that input as a movement
-            if (!_moving && _queued != Vector3Int.zero)
-                StartMove(_queued);
-        }
-
-        private void StartMove(Vector3Int dir)
+        private void Move(Vector3Int dir)
         {
             // If the level is complete, ignore input
             if (_levelComplete)
@@ -84,81 +57,26 @@ namespace Sprintbox
                 _queued = dir;
                 return;
             }
-
+            
+            // Reset queue on move
             _queued = Vector3Int.zero;
 
-            StartCoroutine(Move(dir, speed));
+            if (dir.x != 0)
+                _spriteRenderer.sprite = dir.x > 0 ? rightSprite : leftSprite;
+            if (dir.y != 0)
+                _spriteRenderer.sprite = dir.y > 0 ? upSprite : downSprite;
+
+            PuzzleManager.Instance.MoveContinuous(_puzzleObject, dir);
         }
 
-        private IEnumerator Move(Vector3Int direction, float speed)
+        private void Update()
         {
-            _moving = true;
-            var step = 0.0f;
-
-            while (true)
-            {
-                var start = transform.position;
-                var end = start + direction;
-
-                var offset = tilemap.transform.position;
-                var startCoord = tilemap.WorldToCell(start - offset);
-                var endCoord = startCoord + direction;
-
-                var boxes = new List<GameObject>();
-                while (_boxes.ContainsKey(endCoord))
-                {
-                    boxes.Add(_boxes[endCoord]);
-                    endCoord += direction;
-                }
-                
-                if (!tilemap.HasTile(endCoord))
-                    break;
-                
-                // TODO: Smoothen movement of boxes
-                for (int i = boxes.Count - 1; i >= 0; i--)
-                {
-                    var box = boxes[i];
-                    var coord = tilemap.WorldToCell(box.transform.position - offset);
-                    _boxes.Remove(coord);
-                    _boxes.Add(coord + direction, box);
-                    box.transform.position += direction;
-                }
-
-                while (step < 1.0f)
-                {
-                    yield return null;
-                    step += Time.deltaTime * speed;
-                
-                    transform.position = Vector3.Lerp(start, end, step);
-                }
-                
-                if (boxes.Count > 0 && _goals.ContainsKey(endCoord))
-                {
-                    var box = boxes[^1];
-                    _boxes.Remove(endCoord);
-                    boxes.Remove(box);
-                    
-                    Destroy(box);
-                    
-                    CheckWinCondition();
-                }
-                
-                step -= 1.0f;
-                yield return null;
-            }
-            
-            _moving = false;
+            // Check if the player is stationary and there is an input queued
+            // If there is, then submit that input as a movement
+            if (!_moving && _queued != Vector3Int.zero)
+                Move(_queued);
         }
 
-        private void CheckWinCondition()
-        {
-            if (_boxes.Count == 0)
-            {
-                _levelComplete = true;
-                OnWin?.Invoke();
-            }
-        }
-        
         private void OnEnable() => _controls.Enable();
         private void OnDisable() => _controls.Disable();
     }
