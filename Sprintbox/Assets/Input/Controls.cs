@@ -71,6 +71,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Toggle Menu"",
+                    ""type"": ""Button"",
+                    ""id"": ""0d316f3c-e9e5-4b2f-89dd-2a2621e7abfd"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -172,6 +181,28 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""Level Restart"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4829a569-df83-4658-8df4-39861b9a9aed"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Toggle Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""af22d703-c946-4245-ab38-c37395aa0059"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Toggle Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -185,6 +216,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Player_MoveUp = m_Player.FindAction("Move Up", throwIfNotFound: true);
         m_Player_MoveDown = m_Player.FindAction("Move Down", throwIfNotFound: true);
         m_Player_LevelRestart = m_Player.FindAction("Level Restart", throwIfNotFound: true);
+        m_Player_ToggleMenu = m_Player.FindAction("Toggle Menu", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -251,6 +283,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_MoveUp;
     private readonly InputAction m_Player_MoveDown;
     private readonly InputAction m_Player_LevelRestart;
+    private readonly InputAction m_Player_ToggleMenu;
     public struct PlayerActions
     {
         private @Controls m_Wrapper;
@@ -260,6 +293,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @MoveUp => m_Wrapper.m_Player_MoveUp;
         public InputAction @MoveDown => m_Wrapper.m_Player_MoveDown;
         public InputAction @LevelRestart => m_Wrapper.m_Player_LevelRestart;
+        public InputAction @ToggleMenu => m_Wrapper.m_Player_ToggleMenu;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -284,6 +318,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @LevelRestart.started += instance.OnLevelRestart;
             @LevelRestart.performed += instance.OnLevelRestart;
             @LevelRestart.canceled += instance.OnLevelRestart;
+            @ToggleMenu.started += instance.OnToggleMenu;
+            @ToggleMenu.performed += instance.OnToggleMenu;
+            @ToggleMenu.canceled += instance.OnToggleMenu;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -303,6 +340,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @LevelRestart.started -= instance.OnLevelRestart;
             @LevelRestart.performed -= instance.OnLevelRestart;
             @LevelRestart.canceled -= instance.OnLevelRestart;
+            @ToggleMenu.started -= instance.OnToggleMenu;
+            @ToggleMenu.performed -= instance.OnToggleMenu;
+            @ToggleMenu.canceled -= instance.OnToggleMenu;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -327,5 +367,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnMoveUp(InputAction.CallbackContext context);
         void OnMoveDown(InputAction.CallbackContext context);
         void OnLevelRestart(InputAction.CallbackContext context);
+        void OnToggleMenu(InputAction.CallbackContext context);
     }
 }

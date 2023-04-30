@@ -19,8 +19,7 @@ namespace Sprintbox
         public Sprite rightSprite;
 
         public static PlayerController Instance { get; private set; }
-        
-        private Controls _controls;
+        public static Controls Controls;
 
         private Vector3Int _queued;
 
@@ -36,13 +35,13 @@ namespace Sprintbox
             _puzzleObject = GetComponent<PuzzleObject>();
             _spriteRenderer = GetComponent<SpriteRenderer>();
             
-            _controls = new();
-            _controls.Player.MoveLeft.performed  += _ => Move(Vector3Int.left);
-            _controls.Player.MoveRight.performed += _ => Move(Vector3Int.right);
-            _controls.Player.MoveUp.performed    += _ => Move(Vector3Int.up);
-            _controls.Player.MoveDown.performed  += _ => Move(Vector3Int.down);
+            Controls = new();
+            Controls.Player.MoveLeft.performed  += _ => Move(Vector3Int.left);
+            Controls.Player.MoveRight.performed += _ => Move(Vector3Int.right);
+            Controls.Player.MoveUp.performed    += _ => Move(Vector3Int.up);
+            Controls.Player.MoveDown.performed  += _ => Move(Vector3Int.down);
 
-            _controls.Player.LevelRestart.performed += _ => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Controls.Player.LevelRestart.performed += _ => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         private void Move(Vector3Int dir)
@@ -77,7 +76,7 @@ namespace Sprintbox
                 Move(_queued);
         }
 
-        private void OnEnable() => _controls.Enable();
-        private void OnDisable() => _controls.Disable();
+        private void OnEnable() => Controls.Enable();
+        private void OnDisable() => Controls.Disable();
     }
 }
