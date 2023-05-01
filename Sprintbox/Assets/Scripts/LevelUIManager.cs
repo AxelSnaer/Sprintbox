@@ -1,9 +1,6 @@
-﻿using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-using TMPro;
-using UnityEditor;
 using UnityEngine.SceneManagement;
 
 namespace Sprintbox
@@ -65,10 +62,9 @@ namespace Sprintbox
 				ToMenu();
 		}
 		
-		// Code by swingingtom taken from https://forum.unity.com/threads/scene-management-verify-if-a-scene-exists.910934/
 		public static bool IsSceneInProject(string name)
 		{
-			return EditorBuildSettings.scenes.Any(scene => scene.enabled && scene.path.Contains($"/{name}.unity"));
+			return Application.CanStreamedLevelBeLoaded(name);
 		}
 	}
 }
