@@ -1216,6 +1216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winScreen: {fileID: 5304832744020391459}
   pauseScreen: {fileID: 5304832743043548100}
+  nextLevelButton: {fileID: 5304832744267308669}
 --- !u!1 &5304832744447369228
 GameObject:
   m_ObjectHideFlags: 0

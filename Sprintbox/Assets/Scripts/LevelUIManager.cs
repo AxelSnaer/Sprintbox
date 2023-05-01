@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using TMPro;
 using UnityEditor;
 using UnityEngine.SceneManagement;
 
@@ -11,16 +12,25 @@ namespace Sprintbox
 	{
 		public Image winScreen;
 		public Image pauseScreen;
+		public Button nextLevelButton;
 		
 		private void Start()
 		{
 			PuzzleManager.Instance.OnWin += () =>
 			{
+				ClosePauseMenu();
 				winScreen.gameObject.SetActive(true);
 				winScreen.DOColor(Color.white, 0.5f);
 			};
 
-			PlayerController.Controls.Player.ToggleMenu.performed += _ => TogglePauseMenu();
+			var idx = SceneManager.GetActiveScene().buildIndex;
+			nextLevelButton.gameObject.SetActive(IsSceneInProject($"Level{idx + 1}"));
+
+			PlayerController.Controls.Player.ToggleMenu.performed += _ =>
+			{
+				if (!winScreen.gameObject.activeSelf)
+					TogglePauseMenu();
+			};
 		}
 		
 		public void TogglePauseMenu()
