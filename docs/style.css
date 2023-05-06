@@ -1,0 +1,12 @@
+body {
+    /*background-image: url("assets/background.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;*/
+}
+
+.main-container {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
