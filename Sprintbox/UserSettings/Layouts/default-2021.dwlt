@@ -8,30 +8,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PixelRect:
-    serializedVersion: 2
-    x: 274.6667
-    y: 158.66667
-    width: 641.3334
-    height: 603.3334
-  m_ShowMode: 0
-  m_Title: Build Settings
-  m_RootView: {fileID: 4}
-  m_MinSize: {x: 641, y: 603}
-  m_MaxSize: {x: 4001, y: 4023}
-  m_Maximized: 0
---- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -39,66 +15,16 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 28.666668
-    width: 2293.3335
-    height: 899.3334
+    y: 66
+    width: 1512
+    height: 831
   m_ShowMode: 4
   m_Title: Game
-  m_RootView: {fileID: 5}
+  m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: BuildPlayerWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 641.3334
-    height: 603.3334
-  m_MinSize: {x: 641, y: 603}
-  m_MaxSize: {x: 4001, y: 4023}
-  m_ActualView: {fileID: 18}
-  m_Panes:
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &4
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 3}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 641.3334
-    height: 603.3334
-  m_MinSize: {x: 641, y: 603}
-  m_MaxSize: {x: 4001, y: 4023}
-  vertical: 0
-  controlID: 175
---- !u!114 &5
+--- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,22 +37,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 6}
-  - {fileID: 8}
-  - {fileID: 7}
+  - {fileID: 3}
+  - {fileID: 5}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2293.3333
-    height: 899.3333
+    width: 1512
+    height: 831
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &6
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,12 +69,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2293.3333
+    width: 1512
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &7
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,12 +90,12 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 879.3333
-    width: 2293.3333
+    y: 811
+    width: 1512
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &8
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,18 +108,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 9}
+  - {fileID: 6}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 2293.3333
-    height: 849.3333
+    width: 1512
+    height: 781
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 28
---- !u!114 &9
+  controlID: 24
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -206,44 +132,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 10}
-  - {fileID: 17}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 2293.3333
-    height: 849.3333
-  m_MinSize: {x: 300, y: 200}
-  m_MaxSize: {x: 24288, y: 16192}
-  vertical: 0
-  controlID: 29
---- !u!114 &10
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 11}
+  - {fileID: 7}
   - {fileID: 14}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1751.3334
-    height: 849.3333
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 16192, y: 16192}
-  vertical: 1
-  controlID: 78
---- !u!114 &11
+    width: 1512
+    height: 781
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 25
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -256,19 +157,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 12}
-  - {fileID: 13}
+  - {fileID: 8}
+  - {fileID: 11}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1751.3334
-    height: 604
+    width: 1154.5
+    height: 781
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 26
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 9}
+  - {fileID: 10}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1154.5
+    height: 555.5
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 121
---- !u!114 &12
+  controlID: 27
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,17 +211,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 307.33334
-    height: 604
-  m_MinSize: {x: 241, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 19}
+    width: 202.5
+    height: 555.5
+  m_MinSize: {x: 240, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 20}
-  - {fileID: 19}
+  - {fileID: 16}
+  - {fileID: 15}
   m_Selected: 1
   m_LastSelected: 0
---- !u!114 &13
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -310,19 +236,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 307.33334
+    x: 202.5
     y: 0
-    width: 1444
-    height: 604
+    width: 952
+    height: 555.5
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 21}
-  - {fileID: 22}
+  - {fileID: 17}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &14
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -335,19 +261,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 15}
-  - {fileID: 16}
+  - {fileID: 12}
+  - {fileID: 13}
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 604
-    width: 1751.3334
-    height: 245.33331
+    y: 555.5
+    width: 1154.5
+    height: 225.5
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 79
---- !u!114 &15
+  controlID: 77
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -364,16 +290,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 976
-    height: 245.33331
+    width: 643.5
+    height: 225.5
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 23}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 23}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &16
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -388,18 +314,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 976
+    x: 643.5
     y: 0
-    width: 775.3334
-    height: 245.33331
+    width: 511
+    height: 225.5
   m_MinSize: {x: 202, y: 141}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 24}
+  m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 24}
+  - {fileID: 20}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &17
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -414,69 +340,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1751.3334
+    x: 1154.5
     y: 0
-    width: 541.9999
-    height: 849.3333
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 25}
+    width: 357.5
+    height: 781
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 25}
+  - {fileID: 21}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &18
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12043, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 640, y: 580}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Build Settings
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 274.6667
-    y: 158.66667
-    width: 641.3334
-    height: 582.3334
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
-  m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
---- !u!114 &19
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -497,9 +372,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 58.666668
-    width: 306.33334
-    height: 583
+    y: 96
+    width: 201.5
+    height: 534.5
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -512,7 +387,7 @@ MonoBehaviour:
   m_Palette: {fileID: 2211152468165837644, guid: 632a3ce2792368b428abaa5cf2c256d1, type: 3}
   m_DrawGridGizmo: 1
   m_DrawGizmos: 0
---- !u!114 &20
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -546,7 +421,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f4f2ffffbcf3ffff74f6ffff12f7ffffa8f7ffff3ef8ffff4af8ffff22fbffff
+      m_ExpandedIDs: 62e0ffff2ce1ffffe4e3ffff82e4ffff18e5ffffaee5ffffbae5ffff26fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -562,7 +437,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 12}
+        m_ClientGUIView: {fileID: 9}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -570,7 +445,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &21
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -590,10 +465,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 307.33334
-    y: 58.666668
-    width: 1442
-    height: 583
+    x: 202.5
+    y: 96
+    width: 950
+    height: 534.5
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -603,8 +478,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -98.666626, y: -26}
+      snapOffset: {x: -101, y: -26}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -931,7 +806,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &22
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -966,7 +841,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1499, y: 843}
+  m_TargetSize: {x: 1998, y: 1124}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -981,8 +856,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -499.6667
-    m_HBaseRangeMax: 499.6667
+    m_HBaseRangeMin: -499.5
+    m_HBaseRangeMax: 499.5
     m_VBaseRangeMin: -281
     m_VBaseRangeMax: 281
     m_HAllowExceedBaseRangeMin: 1
@@ -1018,13 +893,13 @@ MonoBehaviour:
       height: 562
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 2163, y: 874.5}
+  m_LastWindowPixelSize: {x: 2884, y: 1166}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &23
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1045,9 +920,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 662.6667
-    width: 975
-    height: 224.33331
+    y: 651.5
+    width: 642.5
+    height: 204.5
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1066,22 +941,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: F:\Dev\School\Sprintbox\Sprintbox
+  m_LastProjectPath: /Users/axelatlason/dev/school/Sprintbox/Sprintbox
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a700000
-    m_LastClickedID: 28762
-    m_ExpandedIDs: 000000004a70000000ca9a3b
+    m_SelectedIDs: 48700000
+    m_LastClickedID: 28744
+    m_ExpandedIDs: 000000004870000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1109,7 +984,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004a700000
+    m_ExpandedIDs: 0000000048700000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1153,7 +1028,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 15}
+      m_ClientGUIView: {fileID: 12}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1165,7 +1040,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &24
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1185,1033 +1060,52 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 976
-    y: 662.6667
-    width: 773.3334
-    height: 224.33331
+    x: 643.5
+    y: 651.5
+    width: 509
+    height: 204.5
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  logPanelScroll: {x: 0, y: -40}
+  logPanelScroll: {x: 0, y: -102}
   logPanelSelectedIndex: -1
   logPanelAutoScroll: 1
-  currentFrame: 39488
+  currentFrame: 46746
   logs:
-    lastGrabbedIndex: 1
-    lastGrabbedCount: 2
+    lastGrabbedIndex: 0
+    lastGrabbedCount: 1
     proEntries:
-    - logType: 2
-      ignore: 0
-      processed: 1
-      tempFilterProcessed: 1
-      remoteEndPoint: Local
-      logPanelVisible: 1
-      logPanelIndex: 0
-      logOutputHeight: -1
-      listIndex: 0
-      nativeIndex: 0
-      nativeIdentifier: 0
-      originalLog: 'Unable to find player assembly: Library/PlayerScriptAssemblies/UnityEngine.TestRunner.dll'
-      originalStackTrace: '
-
-        UnityEngine.Debug:LogWarning (object)
-
-        Unity.Burst.Editor.BurstAotCompiler:OnPostBuildPlayerScriptDLLsImpl
-        (Unity.Burst.Editor.BurstAotCompiler/BurstAOTSettings,UnityEditor.Compilation.Assembly[])
-        (at Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:498)
-
-        Unity.Burst.Editor.BurstAOTCompilerPostprocessor:DoGenerate
-        (UnityEditor.Compilation.Assembly[]) (at Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:265)
-
-        Unity.Burst.Editor.BurstAOTCompilerPostprocessor:OnPostBuildPlayerScriptDLLs
-        (UnityEditor.Build.Reporting.BuildReport) (at Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:189)
-
-        UnityEngine.GUIUtility:ProcessEvent
-        (int,intptr,bool&)
-
-'
-      nativeFileName: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs
-      nativeFileNamePretty: 
-      nativeLineNumber: 498
-      watchName: 
-      logText: 'Unable to find player assembly: Library/PlayerScriptAssemblies/UnityEngine.TestRunner.dll'
-      logTruncatedText: 'Unable to find player assembly: Library/PlayerScriptAssemblies/UnityEngine.TestRunner.dll'
-      logColumnText: 'Unable to find player assembly: Library/PlayerScriptAssemblies/UnityEngine.TestRunner.dll'
-      fileName: 
-      className: 
-      namespaceName: 
-      lineCount: 1
-      hasSourceCode: 0
-      timeStamp: None
-      timeFrame: -1
-      timeStampDateTimeNow: 
-      instanceID: 0
-      collapsedCount: 0
-      cachedHeight: 18
-      cachedHeightLogWidth: 729.3334
-      stackEntries:
-      - fileName: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs
-        fileNameWithoutAssets: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs
-        fileNameWithoutAssetsPlusLineNumber: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:498
-        fileNameWithoutPath: BurstAotCompiler.cs
-        fileNameWithoutPathPlusLineNumber: BurstAotCompiler.cs:498
-        fileNamePretty: BurstAotCompiler
-        instanceID: -1
-        className: BurstAotCompiler
-        methodName: OnPostBuildPlayerScriptDLLsImpl
-        namespaceName: Unity.Burst.Editor
-        lineNumberString: 498
-        charNumber: 0
-        stackLabel: BurstAotCompiler.OnPostBuildPlayerScriptDLLsImpl()
-        stackLabel2: ' at Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:498'
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-        keywordTokens:
-        - abstract
-        - add
-        - alias
-        - as
-        - ascending
-        - async
-        - await
-        - base
-        - bool
-        - break
-        - by
-        - byte
-        - case
-        - catch
-        - char
-        - checked
-        - class
-        - const
-        - continue
-        - decimal
-        - default
-        - delegate
-        - descending
-        - do
-        - double
-        - dynamic
-        - else
-        - enum
-        - equals
-        - event
-        - explicit
-        - extern
-        - false
-        - finally
-        - fixed
-        - float
-        - for
-        - foreach
-        - from
-        - get
-        - global
-        - goto
-        - group
-        - if
-        - implicit
-        - in
-        - int
-        - interface
-        - internal
-        - into
-        - is
-        - join
-        - let
-        - lock
-        - long
-        - nameof
-        - namespace
-        - new
-        - null
-        - object
-        - on
-        - operator
-        - orderby
-        - out
-        - override
-        - params
-        - partial
-        - private
-        - protected
-        - public
-        - readonly
-        - ref
-        - remove
-        - return
-        - sbyte
-        - sealed
-        - select
-        - set
-        - short
-        - sizeof
-        - stackalloc
-        - static
-        - string
-        - struct
-        - switch
-        - this
-        - throw
-        - true
-        - try
-        - typeof
-        - uint
-        - ulong
-        - unchecked
-        - unsafe
-        - ushort
-        - using
-        - value
-        - var
-        - virtual
-        - void
-        - volatile
-        - when
-        - where
-        - while
-        - yield
-      - fileName: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs
-        fileNameWithoutAssets: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs
-        fileNameWithoutAssetsPlusLineNumber: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:265
-        fileNameWithoutPath: BurstAotCompiler.cs
-        fileNameWithoutPathPlusLineNumber: BurstAotCompiler.cs:265
-        fileNamePretty: BurstAotCompiler
-        instanceID: -1
-        className: BurstAOTCompilerPostprocessor
-        methodName: DoGenerate
-        namespaceName: Unity.Burst.Editor
-        lineNumberString: 265
-        charNumber: 0
-        stackLabel: BurstAOTCompilerPostprocessor.DoGenerate()
-        stackLabel2: ' at Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:265'
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-        keywordTokens:
-        - abstract
-        - add
-        - alias
-        - as
-        - ascending
-        - async
-        - await
-        - base
-        - bool
-        - break
-        - by
-        - byte
-        - case
-        - catch
-        - char
-        - checked
-        - class
-        - const
-        - continue
-        - decimal
-        - default
-        - delegate
-        - descending
-        - do
-        - double
-        - dynamic
-        - else
-        - enum
-        - equals
-        - event
-        - explicit
-        - extern
-        - false
-        - finally
-        - fixed
-        - float
-        - for
-        - foreach
-        - from
-        - get
-        - global
-        - goto
-        - group
-        - if
-        - implicit
-        - in
-        - int
-        - interface
-        - internal
-        - into
-        - is
-        - join
-        - let
-        - lock
-        - long
-        - nameof
-        - namespace
-        - new
-        - null
-        - object
-        - on
-        - operator
-        - orderby
-        - out
-        - override
-        - params
-        - partial
-        - private
-        - protected
-        - public
-        - readonly
-        - ref
-        - remove
-        - return
-        - sbyte
-        - sealed
-        - select
-        - set
-        - short
-        - sizeof
-        - stackalloc
-        - static
-        - string
-        - struct
-        - switch
-        - this
-        - throw
-        - true
-        - try
-        - typeof
-        - uint
-        - ulong
-        - unchecked
-        - unsafe
-        - ushort
-        - using
-        - value
-        - var
-        - virtual
-        - void
-        - volatile
-        - when
-        - where
-        - while
-        - yield
-      - fileName: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs
-        fileNameWithoutAssets: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs
-        fileNameWithoutAssetsPlusLineNumber: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:189
-        fileNameWithoutPath: BurstAotCompiler.cs
-        fileNameWithoutPathPlusLineNumber: BurstAotCompiler.cs:189
-        fileNamePretty: BurstAotCompiler
-        instanceID: -1
-        className: BurstAOTCompilerPostprocessor
-        methodName: OnPostBuildPlayerScriptDLLs
-        namespaceName: Unity.Burst.Editor
-        lineNumberString: 189
-        charNumber: 0
-        stackLabel: BurstAOTCompilerPostprocessor.OnPostBuildPlayerScriptDLLs()
-        stackLabel2: ' at Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:189'
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-        keywordTokens:
-        - abstract
-        - add
-        - alias
-        - as
-        - ascending
-        - async
-        - await
-        - base
-        - bool
-        - break
-        - by
-        - byte
-        - case
-        - catch
-        - char
-        - checked
-        - class
-        - const
-        - continue
-        - decimal
-        - default
-        - delegate
-        - descending
-        - do
-        - double
-        - dynamic
-        - else
-        - enum
-        - equals
-        - event
-        - explicit
-        - extern
-        - false
-        - finally
-        - fixed
-        - float
-        - for
-        - foreach
-        - from
-        - get
-        - global
-        - goto
-        - group
-        - if
-        - implicit
-        - in
-        - int
-        - interface
-        - internal
-        - into
-        - is
-        - join
-        - let
-        - lock
-        - long
-        - nameof
-        - namespace
-        - new
-        - null
-        - object
-        - on
-        - operator
-        - orderby
-        - out
-        - override
-        - params
-        - partial
-        - private
-        - protected
-        - public
-        - readonly
-        - ref
-        - remove
-        - return
-        - sbyte
-        - sealed
-        - select
-        - set
-        - short
-        - sizeof
-        - stackalloc
-        - static
-        - string
-        - struct
-        - switch
-        - this
-        - throw
-        - true
-        - try
-        - typeof
-        - uint
-        - ulong
-        - unchecked
-        - unsafe
-        - ushort
-        - using
-        - value
-        - var
-        - virtual
-        - void
-        - volatile
-        - when
-        - where
-        - while
-        - yield
-      - fileName: None
-        fileNameWithoutAssets: None
-        fileNameWithoutAssetsPlusLineNumber: None
-        fileNameWithoutPath: None
-        fileNameWithoutPathPlusLineNumber: None
-        fileNamePretty: None
-        instanceID: -1
-        className: GUIUtility
-        methodName: ProcessEvent
-        namespaceName: UnityEngine
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: GUIUtility.ProcessEvent()
-        stackLabel2: 
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-        keywordTokens:
-        - abstract
-        - add
-        - alias
-        - as
-        - ascending
-        - async
-        - await
-        - base
-        - bool
-        - break
-        - by
-        - byte
-        - case
-        - catch
-        - char
-        - checked
-        - class
-        - const
-        - continue
-        - decimal
-        - default
-        - delegate
-        - descending
-        - do
-        - double
-        - dynamic
-        - else
-        - enum
-        - equals
-        - event
-        - explicit
-        - extern
-        - false
-        - finally
-        - fixed
-        - float
-        - for
-        - foreach
-        - from
-        - get
-        - global
-        - goto
-        - group
-        - if
-        - implicit
-        - in
-        - int
-        - interface
-        - internal
-        - into
-        - is
-        - join
-        - let
-        - lock
-        - long
-        - nameof
-        - namespace
-        - new
-        - null
-        - object
-        - on
-        - operator
-        - orderby
-        - out
-        - override
-        - params
-        - partial
-        - private
-        - protected
-        - public
-        - readonly
-        - ref
-        - remove
-        - return
-        - sbyte
-        - sealed
-        - select
-        - set
-        - short
-        - sizeof
-        - stackalloc
-        - static
-        - string
-        - struct
-        - switch
-        - this
-        - throw
-        - true
-        - try
-        - typeof
-        - uint
-        - ulong
-        - unchecked
-        - unsafe
-        - ushort
-        - using
-        - value
-        - var
-        - virtual
-        - void
-        - volatile
-        - when
-        - where
-        - while
-        - yield
-      ignoredStackEntries: []
-      lastMatchedCount: 1
-      belongsToFilters:
-      - name: Warning
-        isEnabled: 1
-        collapsed: 1
-        itemGUID: dface895-eb29-40d0-b881-dde9fad91793
-        filterName: 
-        mainColor: {r: 1, g: 0.84, b: 0.02, a: 0.7}
-        isStandardFilter: 1
-        isTempFilter: 0
-        filterOnly: 0
-        useAdvancedColors: 0
-        customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
-        swallowStandard: 1
-        standardCanSwallow: 0
-        overrideStandardColors: 1
-        overrideStandardIcon: 1
-        collapseIconBackground: 0
-        collapseIconSymbol: 0
-        collapseIconLetter: 0
-        collapseIconTexture: 0
-        useIconBackground: 1
-        useIconSymbol: 0
-        useIconLetter: 1
-        useIconTexture: 0
-        filterFormatVersion: 1
-        iconColorize: 0
-        useAndOpForSearchList: 0
-        searchList:
-          list:
-          - name: 
-            isEnabled: 1
-            collapsed: 0
-            itemGUID: 98694057-7703-4331-b428-70ce721d84c6
-            searchString: <Any>
-            searchType: 1
-            removeSearchStringFromLog: 0
-            logTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 73261c47-dc68-4c4b-8b9e-512daeacf3df
-                logType: 2
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 1c35d20f-b661-4842-b085-1aa814b8182c
-                logType: 5
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            columnTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 835d2e5b-aa7d-4300-8e16-e4a89ffaa22f
-                columnType: 1
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            sourceCodeList:
-              list: []
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-          selectionList: 0
-          collapsable: 1
-          collapsed: 0
-        iconLetter:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 3
-          iconType2: 1
-          iconText: '!'
-          useIconTextFirstLetter: 0
-          useIconLogColor: 0
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 2}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 7
-        iconSymbol:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconBackground:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGTRIANGLE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconTexture:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        showInToolbar: 1
-        hideLabelInToolbar: 0
-        hideWhenNoMatches: 0
-      belongsToStandardFilters:
-      - name: Warning
-        isEnabled: 1
-        collapsed: 1
-        itemGUID: dface895-eb29-40d0-b881-dde9fad91793
-        filterName: 
-        mainColor: {r: 1, g: 0.84, b: 0.02, a: 0.7}
-        isStandardFilter: 1
-        isTempFilter: 0
-        filterOnly: 0
-        useAdvancedColors: 0
-        customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
-        swallowStandard: 1
-        standardCanSwallow: 0
-        overrideStandardColors: 1
-        overrideStandardIcon: 1
-        collapseIconBackground: 0
-        collapseIconSymbol: 0
-        collapseIconLetter: 0
-        collapseIconTexture: 0
-        useIconBackground: 1
-        useIconSymbol: 0
-        useIconLetter: 1
-        useIconTexture: 0
-        filterFormatVersion: 1
-        iconColorize: 0
-        useAndOpForSearchList: 0
-        searchList:
-          list:
-          - name: 
-            isEnabled: 1
-            collapsed: 0
-            itemGUID: 98694057-7703-4331-b428-70ce721d84c6
-            searchString: <Any>
-            searchType: 1
-            removeSearchStringFromLog: 0
-            logTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 73261c47-dc68-4c4b-8b9e-512daeacf3df
-                logType: 2
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 1c35d20f-b661-4842-b085-1aa814b8182c
-                logType: 5
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            columnTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 835d2e5b-aa7d-4300-8e16-e4a89ffaa22f
-                columnType: 1
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            sourceCodeList:
-              list: []
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-          selectionList: 0
-          collapsable: 1
-          collapsed: 0
-        iconLetter:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 3
-          iconType2: 1
-          iconText: '!'
-          useIconTextFirstLetter: 0
-          useIconLogColor: 0
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 2}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 7
-        iconSymbol:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconBackground:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGTRIANGLE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconTexture:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        showInToolbar: 1
-        hideLabelInToolbar: 0
-        hideWhenNoMatches: 0
-      assignedTempFilter:
-        name: 
-        isEnabled: 1
-        collapsed: 0
-        itemGUID: 
-        filterName: 
-        mainColor: {r: 1, g: 1, b: 1, a: 1}
-        isStandardFilter: 0
-        isTempFilter: 0
-        filterOnly: 0
-        useAdvancedColors: 0
-        customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
-        swallowStandard: 1
-        standardCanSwallow: 0
-        overrideStandardColors: 1
-        overrideStandardIcon: 1
-        collapseIconBackground: 0
-        collapseIconSymbol: 0
-        collapseIconLetter: 0
-        collapseIconTexture: 0
-        useIconBackground: 1
-        useIconSymbol: 0
-        useIconLetter: 0
-        useIconTexture: 0
-        filterFormatVersion: -1
-        iconColorize: 0
-        useAndOpForSearchList: 0
-        searchList:
-          list: []
-          selectionList: 0
-          collapsable: 1
-          collapsed: 0
-        iconLetter:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconSymbol:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconBackground:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconTexture:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        showInToolbar: 1
-        hideLabelInToolbar: 0
-        hideWhenNoMatches: 0
     - logType: 1
       ignore: 0
       processed: 1
       tempFilterProcessed: 1
       remoteEndPoint: Local
       logPanelVisible: 1
-      logPanelIndex: 1
+      logPanelIndex: 0
       logOutputHeight: 26
-      listIndex: 1
-      nativeIndex: 1
+      listIndex: 0
+      nativeIndex: 0
       nativeIdentifier: 0
-      originalLog: Build completed with a result of 'Succeeded' in 28 seconds (28218
+      originalLog: Build completed with a result of 'Succeeded' in 281 seconds (281007
         ms)
       originalStackTrace: '
 
         UnityEngine.GUIUtility:ProcessEvent (int,intptr,bool&)
+        (at /Users/bokken/build/output/unity/unity/Modules/IMGUI/GUIUtility.cs:189)
 
 '
-      nativeFileName: 
+      nativeFileName: /Users/bokken/build/output/unity/unity/Editor/Mono/BuildPlayerWindowBuildMethods.cs
       nativeFileNamePretty: 
-      nativeLineNumber: 0
+      nativeLineNumber: 195
       watchName: 
-      logText: Build completed with a result of 'Succeeded' in 28 seconds (28218
+      logText: Build completed with a result of 'Succeeded' in 281 seconds (281007
         ms)
-      logTruncatedText: Build completed with a result of 'Succeeded' in 28 seconds
-        (28218 ms)
-      logColumnText: Build completed with a result of 'Succeeded' in 28 seconds (28218
-        ms)
+      logTruncatedText: Build completed with a result of 'Succeeded' in 281 seconds
+        (281007 ms)
+      logColumnText: Build completed with a result of 'Succeeded' in 281 seconds
+        (281007 ms)
       fileName: 
       className: 
       namespaceName: 
@@ -2222,36 +1116,36 @@ MonoBehaviour:
       timeStampDateTimeNow: 
       instanceID: 0
       collapsedCount: 0
-      cachedHeight: 18
-      cachedHeightLogWidth: 729.3334
+      cachedHeight: 18.5
+      cachedHeightLogWidth: 465
       stackEntries:
-      - fileName: None
-        fileNameWithoutAssets: None
-        fileNameWithoutAssetsPlusLineNumber: None
-        fileNameWithoutPath: None
-        fileNameWithoutPathPlusLineNumber: None
-        fileNamePretty: None
+      - fileName: /Users/bokken/build/output/unity/unity/Modules/IMGUI/GUIUtility.cs
+        fileNameWithoutAssets: /Users/bokken/build/output/unity/unity/Modules/IMGUI/GUIUtility.cs
+        fileNameWithoutAssetsPlusLineNumber: /Users/bokken/build/output/unity/unity/Modules/IMGUI/GUIUtility.cs:189
+        fileNameWithoutPath: GUIUtility.cs
+        fileNameWithoutPathPlusLineNumber: GUIUtility.cs:189
+        fileNamePretty: GUIUtility
         instanceID: -1
         className: GUIUtility
         methodName: ProcessEvent
         namespaceName: UnityEngine
-        lineNumberString: 0
+        lineNumberString: 189
         charNumber: 0
         stackLabel: GUIUtility.ProcessEvent()
-        stackLabel2: 
+        stackLabel2: ' at /Users/bokken/build/output/unity/unity/Modules/IMGUI/GUIUtility.cs:189'
         stackLabel1Content:
           m_Text: GUIUtility.ProcessEvent()
           m_Image: {fileID: 0}
           m_Tooltip: 
-        stackLabel1Width: 158
-        stackLabel1Height: 24
+        stackLabel1Width: 150
+        stackLabel1Height: 24.5
         stackLabel2Content:
-          m_Text: 
+          m_Text: ' at /Users/bokken/build/output/unity/unity/Modules/IMGUI/GUIUtility.cs:189'
           m_Image: {fileID: 0}
           m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 24
-        stackSourceLineHeight: 16
+        stackLabel2Width: 449
+        stackLabel2Height: 24.5
+        stackSourceLineHeight: 16.5
         sourceCode: []
         sourceCodeUpdated: 1
         showSource: 1
@@ -2367,7 +1261,7 @@ MonoBehaviour:
       - name: Log
         isEnabled: 1
         collapsed: 1
-        itemGUID: 9809e394-148f-4dc9-b0ab-7f13f0c91aa8
+        itemGUID: a1ff35e3-bca2-4f37-ba92-80b9755df527
         filterName: 
         mainColor: {r: 1, g: 1, b: 1, a: 1}
         isStandardFilter: 1
@@ -2396,7 +1290,7 @@ MonoBehaviour:
           - name: 
             isEnabled: 1
             collapsed: 0
-            itemGUID: 240d211f-856c-4cc5-9ef5-3f3e8ec463b3
+            itemGUID: 63c56827-4d5a-4279-b821-0cda126e2d7e
             searchString: <Any>
             searchType: 1
             removeSearchStringFromLog: 0
@@ -2405,7 +1299,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: 26792dea-36df-4e2b-8558-6eeb6d26279f
+                itemGUID: d900edfe-3569-43c5-98ae-6c7bc03e6fe6
                 logType: 1
               selectionList: 0
               collapsable: 1
@@ -2415,7 +1309,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: 36b10ec7-63cd-44d7-bdb2-77292356f3ba
+                itemGUID: d9f2b151-30ee-41ae-9fbc-aef4f49cfbf8
                 columnType: 1
               selectionList: 0
               collapsable: 1
@@ -2503,7 +1397,7 @@ MonoBehaviour:
       - name: Log
         isEnabled: 1
         collapsed: 1
-        itemGUID: 9809e394-148f-4dc9-b0ab-7f13f0c91aa8
+        itemGUID: a1ff35e3-bca2-4f37-ba92-80b9755df527
         filterName: 
         mainColor: {r: 1, g: 1, b: 1, a: 1}
         isStandardFilter: 1
@@ -2532,7 +1426,7 @@ MonoBehaviour:
           - name: 
             isEnabled: 1
             collapsed: 0
-            itemGUID: 240d211f-856c-4cc5-9ef5-3f3e8ec463b3
+            itemGUID: 63c56827-4d5a-4279-b821-0cda126e2d7e
             searchString: <Any>
             searchType: 1
             removeSearchStringFromLog: 0
@@ -2541,7 +1435,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: 26792dea-36df-4e2b-8558-6eeb6d26279f
+                itemGUID: d900edfe-3569-43c5-98ae-6c7bc03e6fe6
                 logType: 1
               selectionList: 0
               collapsable: 1
@@ -2551,7 +1445,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: 36b10ec7-63cd-44d7-bdb2-77292356f3ba
+                itemGUID: d9f2b151-30ee-41ae-9fbc-aef4f49cfbf8
                 columnType: 1
               selectionList: 0
               collapsable: 1
@@ -2744,1016 +1638,35 @@ MonoBehaviour:
     compilerErrorEntries: []
     timeFrames: 
     _filteredEntries:
-    - logType: 2
-      ignore: 0
-      processed: 1
-      tempFilterProcessed: 1
-      remoteEndPoint: Local
-      logPanelVisible: 1
-      logPanelIndex: 0
-      logOutputHeight: -1
-      listIndex: 0
-      nativeIndex: 0
-      nativeIdentifier: 0
-      originalLog: 'Unable to find player assembly: Library/PlayerScriptAssemblies/UnityEngine.TestRunner.dll'
-      originalStackTrace: '
-
-        UnityEngine.Debug:LogWarning (object)
-
-        Unity.Burst.Editor.BurstAotCompiler:OnPostBuildPlayerScriptDLLsImpl
-        (Unity.Burst.Editor.BurstAotCompiler/BurstAOTSettings,UnityEditor.Compilation.Assembly[])
-        (at Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:498)
-
-        Unity.Burst.Editor.BurstAOTCompilerPostprocessor:DoGenerate
-        (UnityEditor.Compilation.Assembly[]) (at Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:265)
-
-        Unity.Burst.Editor.BurstAOTCompilerPostprocessor:OnPostBuildPlayerScriptDLLs
-        (UnityEditor.Build.Reporting.BuildReport) (at Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:189)
-
-        UnityEngine.GUIUtility:ProcessEvent
-        (int,intptr,bool&)
-
-'
-      nativeFileName: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs
-      nativeFileNamePretty: 
-      nativeLineNumber: 498
-      watchName: 
-      logText: 'Unable to find player assembly: Library/PlayerScriptAssemblies/UnityEngine.TestRunner.dll'
-      logTruncatedText: 'Unable to find player assembly: Library/PlayerScriptAssemblies/UnityEngine.TestRunner.dll'
-      logColumnText: 'Unable to find player assembly: Library/PlayerScriptAssemblies/UnityEngine.TestRunner.dll'
-      fileName: 
-      className: 
-      namespaceName: 
-      lineCount: 1
-      hasSourceCode: 0
-      timeStamp: None
-      timeFrame: -1
-      timeStampDateTimeNow: 
-      instanceID: 0
-      collapsedCount: 0
-      cachedHeight: 18
-      cachedHeightLogWidth: 729.3334
-      stackEntries:
-      - fileName: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs
-        fileNameWithoutAssets: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs
-        fileNameWithoutAssetsPlusLineNumber: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:498
-        fileNameWithoutPath: BurstAotCompiler.cs
-        fileNameWithoutPathPlusLineNumber: BurstAotCompiler.cs:498
-        fileNamePretty: BurstAotCompiler
-        instanceID: -1
-        className: BurstAotCompiler
-        methodName: OnPostBuildPlayerScriptDLLsImpl
-        namespaceName: Unity.Burst.Editor
-        lineNumberString: 498
-        charNumber: 0
-        stackLabel: BurstAotCompiler.OnPostBuildPlayerScriptDLLsImpl()
-        stackLabel2: ' at Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:498'
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-        keywordTokens:
-        - abstract
-        - add
-        - alias
-        - as
-        - ascending
-        - async
-        - await
-        - base
-        - bool
-        - break
-        - by
-        - byte
-        - case
-        - catch
-        - char
-        - checked
-        - class
-        - const
-        - continue
-        - decimal
-        - default
-        - delegate
-        - descending
-        - do
-        - double
-        - dynamic
-        - else
-        - enum
-        - equals
-        - event
-        - explicit
-        - extern
-        - false
-        - finally
-        - fixed
-        - float
-        - for
-        - foreach
-        - from
-        - get
-        - global
-        - goto
-        - group
-        - if
-        - implicit
-        - in
-        - int
-        - interface
-        - internal
-        - into
-        - is
-        - join
-        - let
-        - lock
-        - long
-        - nameof
-        - namespace
-        - new
-        - null
-        - object
-        - on
-        - operator
-        - orderby
-        - out
-        - override
-        - params
-        - partial
-        - private
-        - protected
-        - public
-        - readonly
-        - ref
-        - remove
-        - return
-        - sbyte
-        - sealed
-        - select
-        - set
-        - short
-        - sizeof
-        - stackalloc
-        - static
-        - string
-        - struct
-        - switch
-        - this
-        - throw
-        - true
-        - try
-        - typeof
-        - uint
-        - ulong
-        - unchecked
-        - unsafe
-        - ushort
-        - using
-        - value
-        - var
-        - virtual
-        - void
-        - volatile
-        - when
-        - where
-        - while
-        - yield
-      - fileName: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs
-        fileNameWithoutAssets: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs
-        fileNameWithoutAssetsPlusLineNumber: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:265
-        fileNameWithoutPath: BurstAotCompiler.cs
-        fileNameWithoutPathPlusLineNumber: BurstAotCompiler.cs:265
-        fileNamePretty: BurstAotCompiler
-        instanceID: -1
-        className: BurstAOTCompilerPostprocessor
-        methodName: DoGenerate
-        namespaceName: Unity.Burst.Editor
-        lineNumberString: 265
-        charNumber: 0
-        stackLabel: BurstAOTCompilerPostprocessor.DoGenerate()
-        stackLabel2: ' at Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:265'
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-        keywordTokens:
-        - abstract
-        - add
-        - alias
-        - as
-        - ascending
-        - async
-        - await
-        - base
-        - bool
-        - break
-        - by
-        - byte
-        - case
-        - catch
-        - char
-        - checked
-        - class
-        - const
-        - continue
-        - decimal
-        - default
-        - delegate
-        - descending
-        - do
-        - double
-        - dynamic
-        - else
-        - enum
-        - equals
-        - event
-        - explicit
-        - extern
-        - false
-        - finally
-        - fixed
-        - float
-        - for
-        - foreach
-        - from
-        - get
-        - global
-        - goto
-        - group
-        - if
-        - implicit
-        - in
-        - int
-        - interface
-        - internal
-        - into
-        - is
-        - join
-        - let
-        - lock
-        - long
-        - nameof
-        - namespace
-        - new
-        - null
-        - object
-        - on
-        - operator
-        - orderby
-        - out
-        - override
-        - params
-        - partial
-        - private
-        - protected
-        - public
-        - readonly
-        - ref
-        - remove
-        - return
-        - sbyte
-        - sealed
-        - select
-        - set
-        - short
-        - sizeof
-        - stackalloc
-        - static
-        - string
-        - struct
-        - switch
-        - this
-        - throw
-        - true
-        - try
-        - typeof
-        - uint
-        - ulong
-        - unchecked
-        - unsafe
-        - ushort
-        - using
-        - value
-        - var
-        - virtual
-        - void
-        - volatile
-        - when
-        - where
-        - while
-        - yield
-      - fileName: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs
-        fileNameWithoutAssets: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs
-        fileNameWithoutAssetsPlusLineNumber: Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:189
-        fileNameWithoutPath: BurstAotCompiler.cs
-        fileNameWithoutPathPlusLineNumber: BurstAotCompiler.cs:189
-        fileNamePretty: BurstAotCompiler
-        instanceID: -1
-        className: BurstAOTCompilerPostprocessor
-        methodName: OnPostBuildPlayerScriptDLLs
-        namespaceName: Unity.Burst.Editor
-        lineNumberString: 189
-        charNumber: 0
-        stackLabel: BurstAOTCompilerPostprocessor.OnPostBuildPlayerScriptDLLs()
-        stackLabel2: ' at Library/PackageCache/com.unity.burst@1.8.2/Editor/BurstAotCompiler.cs:189'
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-        keywordTokens:
-        - abstract
-        - add
-        - alias
-        - as
-        - ascending
-        - async
-        - await
-        - base
-        - bool
-        - break
-        - by
-        - byte
-        - case
-        - catch
-        - char
-        - checked
-        - class
-        - const
-        - continue
-        - decimal
-        - default
-        - delegate
-        - descending
-        - do
-        - double
-        - dynamic
-        - else
-        - enum
-        - equals
-        - event
-        - explicit
-        - extern
-        - false
-        - finally
-        - fixed
-        - float
-        - for
-        - foreach
-        - from
-        - get
-        - global
-        - goto
-        - group
-        - if
-        - implicit
-        - in
-        - int
-        - interface
-        - internal
-        - into
-        - is
-        - join
-        - let
-        - lock
-        - long
-        - nameof
-        - namespace
-        - new
-        - null
-        - object
-        - on
-        - operator
-        - orderby
-        - out
-        - override
-        - params
-        - partial
-        - private
-        - protected
-        - public
-        - readonly
-        - ref
-        - remove
-        - return
-        - sbyte
-        - sealed
-        - select
-        - set
-        - short
-        - sizeof
-        - stackalloc
-        - static
-        - string
-        - struct
-        - switch
-        - this
-        - throw
-        - true
-        - try
-        - typeof
-        - uint
-        - ulong
-        - unchecked
-        - unsafe
-        - ushort
-        - using
-        - value
-        - var
-        - virtual
-        - void
-        - volatile
-        - when
-        - where
-        - while
-        - yield
-      - fileName: None
-        fileNameWithoutAssets: None
-        fileNameWithoutAssetsPlusLineNumber: None
-        fileNameWithoutPath: None
-        fileNameWithoutPathPlusLineNumber: None
-        fileNamePretty: None
-        instanceID: -1
-        className: GUIUtility
-        methodName: ProcessEvent
-        namespaceName: UnityEngine
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: GUIUtility.ProcessEvent()
-        stackLabel2: 
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-        keywordTokens:
-        - abstract
-        - add
-        - alias
-        - as
-        - ascending
-        - async
-        - await
-        - base
-        - bool
-        - break
-        - by
-        - byte
-        - case
-        - catch
-        - char
-        - checked
-        - class
-        - const
-        - continue
-        - decimal
-        - default
-        - delegate
-        - descending
-        - do
-        - double
-        - dynamic
-        - else
-        - enum
-        - equals
-        - event
-        - explicit
-        - extern
-        - false
-        - finally
-        - fixed
-        - float
-        - for
-        - foreach
-        - from
-        - get
-        - global
-        - goto
-        - group
-        - if
-        - implicit
-        - in
-        - int
-        - interface
-        - internal
-        - into
-        - is
-        - join
-        - let
-        - lock
-        - long
-        - nameof
-        - namespace
-        - new
-        - null
-        - object
-        - on
-        - operator
-        - orderby
-        - out
-        - override
-        - params
-        - partial
-        - private
-        - protected
-        - public
-        - readonly
-        - ref
-        - remove
-        - return
-        - sbyte
-        - sealed
-        - select
-        - set
-        - short
-        - sizeof
-        - stackalloc
-        - static
-        - string
-        - struct
-        - switch
-        - this
-        - throw
-        - true
-        - try
-        - typeof
-        - uint
-        - ulong
-        - unchecked
-        - unsafe
-        - ushort
-        - using
-        - value
-        - var
-        - virtual
-        - void
-        - volatile
-        - when
-        - where
-        - while
-        - yield
-      ignoredStackEntries: []
-      lastMatchedCount: 1
-      belongsToFilters:
-      - name: Warning
-        isEnabled: 1
-        collapsed: 1
-        itemGUID: dface895-eb29-40d0-b881-dde9fad91793
-        filterName: 
-        mainColor: {r: 1, g: 0.84, b: 0.02, a: 0.7}
-        isStandardFilter: 1
-        isTempFilter: 0
-        filterOnly: 0
-        useAdvancedColors: 0
-        customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
-        swallowStandard: 1
-        standardCanSwallow: 0
-        overrideStandardColors: 1
-        overrideStandardIcon: 1
-        collapseIconBackground: 0
-        collapseIconSymbol: 0
-        collapseIconLetter: 0
-        collapseIconTexture: 0
-        useIconBackground: 1
-        useIconSymbol: 0
-        useIconLetter: 1
-        useIconTexture: 0
-        filterFormatVersion: 1
-        iconColorize: 0
-        useAndOpForSearchList: 0
-        searchList:
-          list:
-          - name: 
-            isEnabled: 1
-            collapsed: 0
-            itemGUID: 98694057-7703-4331-b428-70ce721d84c6
-            searchString: <Any>
-            searchType: 1
-            removeSearchStringFromLog: 0
-            logTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 73261c47-dc68-4c4b-8b9e-512daeacf3df
-                logType: 2
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 1c35d20f-b661-4842-b085-1aa814b8182c
-                logType: 5
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            columnTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 835d2e5b-aa7d-4300-8e16-e4a89ffaa22f
-                columnType: 1
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            sourceCodeList:
-              list: []
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-          selectionList: 0
-          collapsable: 1
-          collapsed: 0
-        iconLetter:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 3
-          iconType2: 1
-          iconText: '!'
-          useIconTextFirstLetter: 0
-          useIconLogColor: 0
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 2}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 7
-        iconSymbol:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconBackground:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGTRIANGLE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconTexture:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        showInToolbar: 1
-        hideLabelInToolbar: 0
-        hideWhenNoMatches: 0
-      belongsToStandardFilters:
-      - name: Warning
-        isEnabled: 1
-        collapsed: 1
-        itemGUID: dface895-eb29-40d0-b881-dde9fad91793
-        filterName: 
-        mainColor: {r: 1, g: 0.84, b: 0.02, a: 0.7}
-        isStandardFilter: 1
-        isTempFilter: 0
-        filterOnly: 0
-        useAdvancedColors: 0
-        customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
-        swallowStandard: 1
-        standardCanSwallow: 0
-        overrideStandardColors: 1
-        overrideStandardIcon: 1
-        collapseIconBackground: 0
-        collapseIconSymbol: 0
-        collapseIconLetter: 0
-        collapseIconTexture: 0
-        useIconBackground: 1
-        useIconSymbol: 0
-        useIconLetter: 1
-        useIconTexture: 0
-        filterFormatVersion: 1
-        iconColorize: 0
-        useAndOpForSearchList: 0
-        searchList:
-          list:
-          - name: 
-            isEnabled: 1
-            collapsed: 0
-            itemGUID: 98694057-7703-4331-b428-70ce721d84c6
-            searchString: <Any>
-            searchType: 1
-            removeSearchStringFromLog: 0
-            logTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 73261c47-dc68-4c4b-8b9e-512daeacf3df
-                logType: 2
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 1c35d20f-b661-4842-b085-1aa814b8182c
-                logType: 5
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            columnTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 835d2e5b-aa7d-4300-8e16-e4a89ffaa22f
-                columnType: 1
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            sourceCodeList:
-              list: []
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-          selectionList: 0
-          collapsable: 1
-          collapsed: 0
-        iconLetter:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 3
-          iconType2: 1
-          iconText: '!'
-          useIconTextFirstLetter: 0
-          useIconLogColor: 0
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 2}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 7
-        iconSymbol:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconBackground:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGTRIANGLE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconTexture:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        showInToolbar: 1
-        hideLabelInToolbar: 0
-        hideWhenNoMatches: 0
-      assignedTempFilter:
-        name: 
-        isEnabled: 1
-        collapsed: 0
-        itemGUID: 
-        filterName: 
-        mainColor: {r: 1, g: 1, b: 1, a: 1}
-        isStandardFilter: 0
-        isTempFilter: 0
-        filterOnly: 0
-        useAdvancedColors: 0
-        customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
-        swallowStandard: 1
-        standardCanSwallow: 0
-        overrideStandardColors: 1
-        overrideStandardIcon: 1
-        collapseIconBackground: 0
-        collapseIconSymbol: 0
-        collapseIconLetter: 0
-        collapseIconTexture: 0
-        useIconBackground: 1
-        useIconSymbol: 0
-        useIconLetter: 0
-        useIconTexture: 0
-        filterFormatVersion: -1
-        iconColorize: 0
-        useAndOpForSearchList: 0
-        searchList:
-          list: []
-          selectionList: 0
-          collapsable: 1
-          collapsed: 0
-        iconLetter:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconSymbol:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconBackground:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconTexture:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        showInToolbar: 1
-        hideLabelInToolbar: 0
-        hideWhenNoMatches: 0
     - logType: 1
       ignore: 0
       processed: 1
       tempFilterProcessed: 1
       remoteEndPoint: Local
       logPanelVisible: 1
-      logPanelIndex: 1
+      logPanelIndex: 0
       logOutputHeight: 26
-      listIndex: 1
-      nativeIndex: 1
+      listIndex: 0
+      nativeIndex: 0
       nativeIdentifier: 0
-      originalLog: Build completed with a result of 'Succeeded' in 28 seconds (28218
+      originalLog: Build completed with a result of 'Succeeded' in 281 seconds (281007
         ms)
       originalStackTrace: '
 
         UnityEngine.GUIUtility:ProcessEvent (int,intptr,bool&)
+        (at /Users/bokken/build/output/unity/unity/Modules/IMGUI/GUIUtility.cs:189)
 
 '
-      nativeFileName: 
+      nativeFileName: /Users/bokken/build/output/unity/unity/Editor/Mono/BuildPlayerWindowBuildMethods.cs
       nativeFileNamePretty: 
-      nativeLineNumber: 0
+      nativeLineNumber: 195
       watchName: 
-      logText: Build completed with a result of 'Succeeded' in 28 seconds (28218
+      logText: Build completed with a result of 'Succeeded' in 281 seconds (281007
         ms)
-      logTruncatedText: Build completed with a result of 'Succeeded' in 28 seconds
-        (28218 ms)
-      logColumnText: Build completed with a result of 'Succeeded' in 28 seconds (28218
-        ms)
+      logTruncatedText: Build completed with a result of 'Succeeded' in 281 seconds
+        (281007 ms)
+      logColumnText: Build completed with a result of 'Succeeded' in 281 seconds
+        (281007 ms)
       fileName: 
       className: 
       namespaceName: 
@@ -3764,36 +1677,36 @@ MonoBehaviour:
       timeStampDateTimeNow: 
       instanceID: 0
       collapsedCount: 0
-      cachedHeight: 18
-      cachedHeightLogWidth: 729.3334
+      cachedHeight: 18.5
+      cachedHeightLogWidth: 465
       stackEntries:
-      - fileName: None
-        fileNameWithoutAssets: None
-        fileNameWithoutAssetsPlusLineNumber: None
-        fileNameWithoutPath: None
-        fileNameWithoutPathPlusLineNumber: None
-        fileNamePretty: None
+      - fileName: /Users/bokken/build/output/unity/unity/Modules/IMGUI/GUIUtility.cs
+        fileNameWithoutAssets: /Users/bokken/build/output/unity/unity/Modules/IMGUI/GUIUtility.cs
+        fileNameWithoutAssetsPlusLineNumber: /Users/bokken/build/output/unity/unity/Modules/IMGUI/GUIUtility.cs:189
+        fileNameWithoutPath: GUIUtility.cs
+        fileNameWithoutPathPlusLineNumber: GUIUtility.cs:189
+        fileNamePretty: GUIUtility
         instanceID: -1
         className: GUIUtility
         methodName: ProcessEvent
         namespaceName: UnityEngine
-        lineNumberString: 0
+        lineNumberString: 189
         charNumber: 0
         stackLabel: GUIUtility.ProcessEvent()
-        stackLabel2: 
+        stackLabel2: ' at /Users/bokken/build/output/unity/unity/Modules/IMGUI/GUIUtility.cs:189'
         stackLabel1Content:
           m_Text: GUIUtility.ProcessEvent()
           m_Image: {fileID: 0}
           m_Tooltip: 
-        stackLabel1Width: 158
-        stackLabel1Height: 24
+        stackLabel1Width: 150
+        stackLabel1Height: 24.5
         stackLabel2Content:
-          m_Text: 
+          m_Text: ' at /Users/bokken/build/output/unity/unity/Modules/IMGUI/GUIUtility.cs:189'
           m_Image: {fileID: 0}
           m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 24
-        stackSourceLineHeight: 16
+        stackLabel2Width: 449
+        stackLabel2Height: 24.5
+        stackSourceLineHeight: 16.5
         sourceCode: []
         sourceCodeUpdated: 1
         showSource: 1
@@ -3909,7 +1822,7 @@ MonoBehaviour:
       - name: Log
         isEnabled: 1
         collapsed: 1
-        itemGUID: 9809e394-148f-4dc9-b0ab-7f13f0c91aa8
+        itemGUID: a1ff35e3-bca2-4f37-ba92-80b9755df527
         filterName: 
         mainColor: {r: 1, g: 1, b: 1, a: 1}
         isStandardFilter: 1
@@ -3938,7 +1851,7 @@ MonoBehaviour:
           - name: 
             isEnabled: 1
             collapsed: 0
-            itemGUID: 240d211f-856c-4cc5-9ef5-3f3e8ec463b3
+            itemGUID: 63c56827-4d5a-4279-b821-0cda126e2d7e
             searchString: <Any>
             searchType: 1
             removeSearchStringFromLog: 0
@@ -3947,7 +1860,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: 26792dea-36df-4e2b-8558-6eeb6d26279f
+                itemGUID: d900edfe-3569-43c5-98ae-6c7bc03e6fe6
                 logType: 1
               selectionList: 0
               collapsable: 1
@@ -3957,7 +1870,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: 36b10ec7-63cd-44d7-bdb2-77292356f3ba
+                itemGUID: d9f2b151-30ee-41ae-9fbc-aef4f49cfbf8
                 columnType: 1
               selectionList: 0
               collapsable: 1
@@ -4045,7 +1958,7 @@ MonoBehaviour:
       - name: Log
         isEnabled: 1
         collapsed: 1
-        itemGUID: 9809e394-148f-4dc9-b0ab-7f13f0c91aa8
+        itemGUID: a1ff35e3-bca2-4f37-ba92-80b9755df527
         filterName: 
         mainColor: {r: 1, g: 1, b: 1, a: 1}
         isStandardFilter: 1
@@ -4074,7 +1987,7 @@ MonoBehaviour:
           - name: 
             isEnabled: 1
             collapsed: 0
-            itemGUID: 240d211f-856c-4cc5-9ef5-3f3e8ec463b3
+            itemGUID: 63c56827-4d5a-4279-b821-0cda126e2d7e
             searchString: <Any>
             searchType: 1
             removeSearchStringFromLog: 0
@@ -4083,7 +1996,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: 26792dea-36df-4e2b-8558-6eeb6d26279f
+                itemGUID: d900edfe-3569-43c5-98ae-6c7bc03e6fe6
                 logType: 1
               selectionList: 0
               collapsable: 1
@@ -4093,7 +2006,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: 36b10ec7-63cd-44d7-bdb2-77292356f3ba
+                itemGUID: d9f2b151-30ee-41ae-9fbc-aef4f49cfbf8
                 columnType: 1
               selectionList: 0
               collapsable: 1
@@ -4281,7 +2194,7 @@ MonoBehaviour:
         showInToolbar: 1
         hideLabelInToolbar: 0
         hideWhenNoMatches: 0
---- !u!114 &25
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4301,10 +2214,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1751.3334
-    y: 58.666668
-    width: 540.9999
-    height: 828.3333
+    x: 1154.5
+    y: 96
+    width: 356.5
+    height: 760
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
