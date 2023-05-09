@@ -9,3 +9,7 @@ Einfaldur leikur þar sem maður færir box til markmið eins og Sokoban en með
 ATH: Það vantar mikin tíma á klukkuna svo hún gefur ekki til kynna hversu mikinn tíma í heild var unnin á leiknum
 
 [sprintbox_demo.webm](https://user-images.githubusercontent.com/54533207/236084600-e94f0247-e5d4-4a5e-b53a-3b3e44d9cdcd.webm)
+
+Myndband af öllum leiknum:
+
+[Walkthrough.webm](https://github.com/AxelSnaer/Sprintbox/assets/21077918/688ce9cd-c5a5-44c1-ab62-006c7376648a)
